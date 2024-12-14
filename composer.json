@@ -1,0 +1,22 @@
+{
+    "name": "lucas-catto/orm",
+    "version": "1.0.0",
+    "autoload": {
+        "psr-4": {
+            "Database\\" : "Database/",
+            "Connection\\" : "Database/Connection/",
+            "ORM\\" : "Database/ORM/",
+            "Query\\" : "Database/ORM/Query/"
+        }
+    },
+    "authors": [
+        {
+            "name": "lucas-catto",
+            "email": "lucascattosilva2024@gmail.com"
+        }
+    ],
+    "require": {},
+    "scripts": {
+        "server" : "php -S localhost:8080 -t public"
+    }
+}
