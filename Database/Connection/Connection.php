@@ -2,10 +2,15 @@
 
 class Connection
 {
-    private static $connection;
+    private static $instance;
 
     public static function connection()
     {
-        
+        if (!self::$instance)
+        {
+            self::$instance = new PDO('');
+        }
+
+        return self::$instance;
     }
 }
